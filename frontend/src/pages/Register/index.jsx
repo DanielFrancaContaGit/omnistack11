@@ -8,7 +8,7 @@ import './style.css';
 export default function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [watsapp, setWatsapp] = useState('');
+  const [whatsapp, setWhatsapp] = useState('');
   const [city, setCity] = useState('');
   const [uf, setUf] = useState('');
 
@@ -19,7 +19,7 @@ export default function Register() {
     const data = {
       name,
       email,
-      watsapp,
+      whatsapp,
       city,
       uf
     };
@@ -61,9 +61,9 @@ export default function Register() {
               onChange={e => setEmail(e.target.value)}
             />
             <input 
-              placeholder="Watsapp" 
-              value={watsapp}
-              onChange={e => setWatsapp(e.target.value)}
+              placeholder="Whatsapp" 
+              value={whatsapp}
+              onChange={e => setWhatsapp(e.target.value)}
             />
             <div className="input-group">
               <input 
